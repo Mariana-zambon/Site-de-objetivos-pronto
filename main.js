@@ -43,9 +43,21 @@ function calculaTempo(tempoObjetivo) {
 
 function atualizaCronometro(){
     document.getElementById("dias0").textContent = calculaTempo(tempos[0])[0];
+    document.getElementById("dias1").textContent = calculaTempo(tempos[1])[0];
+    document.getElementById("dias2").textContent = calculaTempo(tempos[2])[0];
+    document.getElementById("dias3").textContent = calculaTempo(tempos[3])[0];
     document.getElementById("horas0").textContent = calculaTempo(tempos[0])[1];
+    document.getElementById("horas1").textContent = calculaTempo(tempos[1])[1];
+    document.getElementById("horas2").textContent = calculaTempo(tempos[2])[1];
+    document.getElementById("horas3").textContent = calculaTempo(tempos[3])[1];
     document.getElementById("min0").textContent = calculaTempo(tempos[0])[2];
+    document.getElementById("min1").textContent = calculaTempo(tempos[1])[2];
+    document.getElementById("min2").textContent = calculaTempo(tempos[2])[2];
+    document.getElementById("min3").textContent = calculaTempo(tempos[3])[2];
     document.getElementById("seg0").textContent = calculaTempo(tempos[0])[3];
+    document.getElementById("seg1").textContent = calculaTempo(tempos[1])[3];
+    document.getElementById("seg2").textContent = calculaTempo(tempos[2])[3];
+    document.getElementById("seg3").textContent = calculaTempo(tempos[3])[3];
 
     for (let i=0; i<contadores.length;i++){
        // contadores[i].textContent = calculaTempo(tempos[i]);   
